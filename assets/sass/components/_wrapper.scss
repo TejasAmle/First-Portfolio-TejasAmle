@@ -1,8 +1,3 @@
-///
-/// Hyperspace by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
 
 /* Wrapper */
 
@@ -59,7 +54,7 @@
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'column');
 			@include vendor('justify-content', 'center');
-			min-height: 100vh;
+			min-height: 50vh;
 
 			body.is-ie & {
 				height: 100vh;
