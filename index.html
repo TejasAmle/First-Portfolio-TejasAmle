@@ -13,14 +13,62 @@
 <body class="is-preload">
 
 
+	<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="113233347044962"
+  logged_in_greeting="Hi, Hello, Hola, Bonjour, Ciao, Namaste! I'm Tejas Amle, how can I help you?"
+  logged_out_greeting="Hi, Hello, Hola, Bonjour, Ciao, Namaste! I'm Tejas Amle, how can I help you?">
+      </div>
+
+
+	<!-- Splash 
+	<section>
+		<div class="splash">
+			<h1 class="fade-in">
+				TEJAS AMLE <br/>
+				Welcome to my website.
+			</h1>
+		</div>
+	</section> -->
+
 
 	<!-- Sidebar -->
 	<section id="sidebar">
+
+		<!-- Splash -->
+		<!-- <section>
+			<div class="splash">
+				<h1 class="fade-in">
+					TEJAS AMLE <br />
+					Welcome to my website.
+				</h1>
+			</div>
+		</section> -->
+
 		<div class="inner">
 			<nav>
 				<ul>
 					<li><a href="#intro">Welcome</a></li>
-					<li><a href="#one">Who am I</a></li>
+					<li><a href="#one">Projects</a></li>
 					<li><a href="#two">What I do</a></li>
 					<li><a href="#three">Get in touch</a></li>
 				</ul>
@@ -36,19 +84,23 @@
 			<div class="inner">
 				<h1>Tejas Amle</h1>
 				<br />
-					Check out my Portfolio site.</p>
+				Check out my Portfolio site.</p>
+				<div class="upper-socials">
 					<ul class="icons">
 						<li><a href="https://twitter.com/tejas_amle" class="icon brands fa-twitter"><span
-									class="label">Twitter</span></a></li>
+									class="label">Twitter</span></a></li><br />
 						<li><a href="https://www.facebook.com/Tejas.Amle.16" class="icon brands fa-facebook-f"><span
-									class="label">Facebook</span></a></li>
-						<li><a href="https://github.com/TejasAmle" class="icon brands fa-github"><span class="label">GitHub</span></a>
-						</li>
+									class="label">Facebook</span></a></li><br />
+						<li><a href="https://github.com/TejasAmle" class="icon brands fa-github"><span
+									class="label">GitHub</span></a>
+						</li><br />
 						<li><a href="https://www.instagram.com/tejas_amle/" class="icon brands fa-instagram"><span
-									class="label">Instagram</span></a></li>
+									class="label">Instagram</span></a></li><br />
 						<li><a href="https://www.linkedin.com/in/tejas-amle/" class="icon brands fa-linkedin-in"><span
-									class="label">LinkedIn</span></a></li>
+									class="label">LinkedIn</span></a></li><br />
 					</ul>
+				</div>
+				
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">Learn more</a></li>
 				</ul>
@@ -59,7 +111,9 @@
 		<section id="one" class="wrapper style2 spotlights">
 			<section style="align-items:center;">
 				<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a> -->
-				<iframe class="image" width="600" height="300" src="https://www.youtube.com/embed/chcDtCBeOWc"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="image" width="600" height="300" src="https://www.youtube.com/embed/chcDtCBeOWc"
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 				<div class="content">
 					<div class="inner">
 						<h2>Sed ipsum dolor</h2>
@@ -73,7 +127,9 @@
 			</section>
 			<section style="align-items:center;">
 				<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a> -->
-				<iframe  class="image" width="600" height="300" src="https://www.youtube.com/embed/ln407B9TzFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="image" width="600" height="300" src="https://www.youtube.com/embed/ln407B9TzFY"
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 				<div class="content">
 					<div class="inner">
 						<h2>Feugiat consequat</h2>
@@ -87,7 +143,9 @@
 			</section>
 			<section style="align-items:center;">
 				<!--<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a> -->
-				<iframe class="image" width="600" height="300" src="https://www.youtube.com/embed/vKPLefRiTmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="image" width="600" height="300" src="https://www.youtube.com/embed/vKPLefRiTmo"
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
 				<div class="content">
 					<div class="inner">
 						<h2>Ultricies aliquam</h2>
@@ -152,11 +210,26 @@
 			</div>
 		</section>
 
+		<section class="ftco-section ftco-hireme img" style="background-image: url(hire.jpg)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>I'm <span>Available</span> as an intern.</h2>
+						<p class="mb-0"><a href="mailto: tejas_amle@yahoo.com" class="btn btn-primary py-3 px-5">Hire
+								me</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 		<!-- Three -->
 		<section id="three" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Get in touch</h2>
-				<p>If you have any questions, please feel free to drop me a line. If you dont get a answer immediately, I might just be travelling
+				<p>If you have any questions, please feel free to drop me a line. If you dont get a answer immediately,
+					I might just be travelling
 					through the middle of nowhere. I'll get back to you as soon as I can. </p>
 				<div class="split style1">
 					<section>
@@ -182,7 +255,7 @@
 					</section>
 					<section>
 						<ul class="contact">
-							
+
 							<li>
 								<h3>Email</h3>
 								<a href="#">tejas_amle@yahoo.com</a><br />
@@ -198,14 +271,18 @@
 								<ul class="icons">
 									<li><a href="https://twitter.com/tejas_amle" class="icon brands fa-twitter"><span
 												class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/Tejas.Amle.16" class="icon brands fa-facebook-f"><span
-												class="label">Facebook</span></a></li>
-									<li><a href="https://github.com/TejasAmle" class="icon brands fa-github"><span class="label">GitHub</span></a>
+									<li><a href="https://www.facebook.com/Tejas.Amle.16"
+											class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
 									</li>
-									<li><a href="https://www.instagram.com/tejas_amle/" class="icon brands fa-instagram"><span
-												class="label">Instagram</span></a></li>
-									<li><a href="https://www.linkedin.com/in/tejas-amle/" class="icon brands fa-linkedin-in"><span
-												class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/TejasAmle" class="icon brands fa-github"><span
+												class="label">GitHub</span></a>
+									</li>
+									<li><a href="https://www.instagram.com/tejas_amle/"
+											class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+									</li>
+									<li><a href="https://www.linkedin.com/in/tejas-amle/"
+											class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+									</li>
 								</ul>
 							</li>
 						</ul>
@@ -221,7 +298,7 @@
 		<div class="inner">
 			<ul class="menu">
 				<li>&copy; Tejas Amle. All rights reserved.</li>
-				<li>Made with ❤️ by Tejas Amle  </li>
+				<li>Made with ❤️ by Tejas Amle </li>
 			</ul>
 		</div>
 	</footer>

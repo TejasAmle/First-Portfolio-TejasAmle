@@ -6,6 +6,23 @@
 		$body = $('body'),
 		$sidebar = $('#sidebar');
 
+	
+	
+	//Splash
+	const splash = document.querySelector('.splash');
+
+	document.addEventListener('DOMContentLoaded', (e) =>{
+
+		setTimeout( () =>{
+			splash.classList.add('display-none');
+		}, 2000);
+	})
+
+
+
+
+
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
