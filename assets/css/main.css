@@ -4420,3 +4420,17 @@ body {
  .blogs{
 	 background-color: midnightblue;
  }
+
+ /* Centered text */
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-justify: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50;
+  }
