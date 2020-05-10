@@ -4531,3 +4531,8 @@ body {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+  }
