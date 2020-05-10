@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/circle.css" />
+	<link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
 	<!-- <link href="assets/css/css-circular-prog-bar.css" rel="stylesheet"> -->
 	<!-- <link href="assets/css/progress.css" rel="stylesheet"> -->
@@ -77,14 +78,14 @@
 	<section id="sidebar">
 
 		<!-- Splash -->
-		<section>
+		<!-- <section>
 			<div class="splash">
 				<h1 class="fade-in">
 					TEJAS AMLE <br />
 					Welcome to my website.
 				</h1>
 			</div>
-		</section>
+		</section> -->
 
 		<div class="inner ">
 			<div>
@@ -441,7 +442,7 @@
 					</div>
 
 					<div class="mySlides fade">
-						<div class="numbertext">4 / 5</div>
+						<div class="numbertext">5 / 5</div>
 						<img src="images/6.jpg" style="width:100%">
 						<!-- <div class="text">Caption Three</div> -->
 					</div>
@@ -460,8 +461,6 @@
 					<span class="dot" onclick="currentSlide(4)"></span>
 					<span class="dot" onclick="currentSlide(5)"></span>
 				</div> -->
-
-
 			</section>
 
 
@@ -476,38 +475,85 @@
 						through the middle of nowhere. I'll get back to you as soon as I can. </p>
 					<div class="split style1">
 						<section>
-							<form method="post" action="mail.html">
+							<form method="post" name=contact-form id=contact-form action="" target=_self
+							onsubmit="return postToGoogle();">
 								<div class="fields">
 									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<label for="name" >Name</label>
+										<input type="text" name="name" id="name"  value="" required />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="text" name="email" id="email" value="" required />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="5"></textarea>
+										<textarea name="message" id="message" rows="5" value="" required></textarea>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><a href="mail.html" class="button submit">Send Message</a></li>
+									<li><a href="" class="button submit">Send Message</a></li>
 								</ul>
 							</form>
+
+
+							<script>
+								function postToGoogle() {
+									var field1 = $("#name").val();
+									var field2 = $("#email").val();
+									var field3 = $("#message").val();
+									if (field1 == "") {
+										alert('Please Fill Your Name');
+										document.getElementById("name").focus();
+										return false;
+									}
+									if (field2 == "") {
+										alert('Please Fill Your Email');
+										document.getElementById("email").focus();
+										return false;
+									}
+									if (field3 == "" || field3.length > 200) {
+										if (field3.length > 200) {
+											alert('It should be less than 200 words');
+										} else {
+											alert('Your message should not be blank.');
+										}
+										document.getElementById("message").focus();
+										return false;
+									}
+									console.log(field1, field2, field3);
+									$.ajax({
+										url: "https://forms.gle/mZU7wSdaccSzbgHBA",
+										data: {
+											"entry.2005620554": field1,
+											"entry.1045781291": field2,
+											"entry.839337160": field3
+										},
+										type: "POST",
+										dataType: "xml",
+										success: function (d) {},
+										error: function (x, y, z) {
+											alert('Your message has been sent successfully.😉');
+											document.getElementById("contact-form").reset();
+										}
+									});
+									return false;
+								}
+							</script>
 						</section>
 						<section>
 							<ul class="contact">
 
 								<li>
 									<h3>Email</h3>
-									<a href="#">tejas_amle@yahoo.com</a><br />
-									<a href="#">tejas_amle@studentpartner.com</a><br />
-									<a href="#">tejas.amle71@gmail.com</a><br />
+									<a href="mailto:tejas_amle@yahoo.com">tejas_amle@yahoo.com</a><br />
+									<a href="mailto:tejas_amle@studentpartner.com">tejas_amle@studentpartner.com</a><br />
+									<a href="mailto:tejas.amle71@gmail.com">tejas.amle71@gmail.com</a><br />
 								</li>
 								<li>
 									<h3>Phone</h3>
-									<span>+91-9910282204</span>
+									<span>
+										<a href="tel: +91-9910282204">+91-9910282204</a> </span>
 								</li>
 								<li>
 									<h3>Social</h3>
@@ -550,6 +596,9 @@
 		</div>
 	</footer>
 
+
+
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -559,6 +608,8 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/slideshow.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 </body>
 
