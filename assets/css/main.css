@@ -4602,6 +4602,10 @@ img {
 	.column {
 		flex: 100%;
 		max-width: 100%;
+		text-align: center;
+	}
+	.column img{
+		max-width: 300px;
 	}
 }
 
