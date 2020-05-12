@@ -184,7 +184,7 @@ textarea {
 	color: white;
 	text-align: center;
 	line-height: 90vh;
-	transition: all 0.8s;
+	transition: all 1s;
 }
 
 @keyframes fadeIn {
