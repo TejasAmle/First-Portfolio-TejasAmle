@@ -15,7 +15,7 @@
 
 		setTimeout( () =>{
 			splash.classList.add('display-none');
-		}, 2000);
+		}, 3500);
 	})
 
 
