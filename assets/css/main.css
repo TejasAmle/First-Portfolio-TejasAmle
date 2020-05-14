@@ -165,7 +165,7 @@ textarea {
 	width: 100%;
 	height: 100vh;
 	background: white;
-	z-index: 100;
+	z-index: 200;
 	/* color: white; */
 	text-align: center;
 	line-height: 35em;
@@ -3709,7 +3709,7 @@ body.is-preload .wrapper.fade>.inner {
 	text-align: right;
 	top: 0;
 	width: 18em;
-	z-index: 10000;
+	/* z-index: 10; */
 }
 
 #sidebar>.inner {
@@ -4624,3 +4624,63 @@ img {
 
 
 
+.animation-container .animated {
+	position: absolute;
+	top: 0;
+}
+
+.animation-container .animated.white {
+	background: #fff;
+}
+
+.animation-container.vertical {
+	height: 100%;
+	width: 7px;
+}
+
+.animation-container.vertical .animated {
+	left: 0;
+	width: 100%;
+	height: 0;
+}
+
+.animation-container.horizontal {
+	position: relative;
+	width: 100%;
+	height: 7px;
+	max-width: 900px;
+	margin: auto;
+}
+
+.animation-container.horizontal .animated {
+	width: 0;
+	height: 100%;
+}
+
+.animation-container.horizontal .animated.right {
+	right: 0;
+}
+
+.animation-container.horizontal .animated.left {
+	left: 0;
+}
+
+
+.overlay {
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 0%;
+}
+
+.overlay h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+}
