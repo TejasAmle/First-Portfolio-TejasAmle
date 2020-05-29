@@ -6,9 +6,9 @@
 
 ## Admin
 
-[![Relative date]https://img.shields.io/badge/started-May-brightgreen](https://github.com/TejasAmle/) [![Maintenance](https://img.shields.io/maintenance/yes/2020?color=green&logo=github)](https://github.com/TejasAmle/)
+[![Relative date](https://img.shields.io/badge/started-May-brightgreen)](https://github.com/TejasAmle/) [![Maintenance](https://img.shields.io/maintenance/yes/2020?color=green&logo=github)](https://github.com/TejasAmle/)
 
-| ![](public/images/anjali-sharma.png) |
+
 | :----------------------------------------------------------: |
 | **[Tejas Amle](https://www.linkedin.com/in/tejas-amle)**  |
 
