@@ -1,6 +1,6 @@
 # Portfolio Website
 
-(https://img.shields.io/github/forks/AnjaliSharma1234/Portfolio.svg?logo=github&color=teal)](https://github.com/AnjaliSharma1234/Portfolio/network) [![GitHub top language](https://img.shields.io/github/languages/top/AnjaliSharma1234/Portfolio?color=yellow&logo=javascript)](https://github.com/AnjaliSharma1234/Portfolio)
+[(https://img.shields.io/github/forks/TejasAmle/Portfolio.svg?logo=github&color=teal)](https://github.com/TejasAmle/Tejas-Amle) [![GitHub top language](https://img.shields.io/github/languages/top/TejasAmle/Portfolio?color=yellow&logo=javascript)](https://github.com/TejasAmle/Tejas-Amle)
 
 ![](public/images/portfolio.png)
 
