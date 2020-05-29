@@ -1,6 +1,6 @@
 # Portfolio Website
 
-[(https://img.shields.io/github/forks/TejasAmle/Portfolio.svg?logo=github&color=teal)](https://github.com/TejasAmle/Tejas-Amle) [![GitHub top language](https://img.shields.io/github/languages/top/TejasAmle/Portfolio?color=yellow&logo=javascript)](https://github.com/TejasAmle/Tejas-Amle)
+(https://github.com/TejasAmle/Tejas-Amle) [![GitHub top language](https://img.shields.io/github/languages/top/TejasAmle/Portfolio?color=yellow&logo=javascript)](https://github.com/TejasAmle/Tejas-Amle)
 
 ![](public/images/portfolio.png)
 
@@ -14,4 +14,4 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/TejasAmle.svg?label=Follow%20@TejasAmle&style=social)](https://github.com/tejas_amle/) [![Twitter Follow](https://img.shields.io/twitter/follow/tejas_amle?style=social)](https://twitter.com/tejas_amle) 
 
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/AnjaliSharma1234/)
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/TejasAmle/)
